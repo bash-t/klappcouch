@@ -1,8 +1,0 @@
-{
-   "type": "hosthander",
-   "prefix" : "yt_",
-   "getId": "function(doc,req) {return doc.prefix + req.search.v;}",
-   "titleRegEx" : "YouTube - ",
-   "titleRegExGlobal": "",
-   "titleReplace": ""
-} 

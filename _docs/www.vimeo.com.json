@@ -1,8 +1,0 @@
-{
-   "type": "hosthander",
-   "prefix": "vim_",
-   "getId": "function(doc,req) {return doc.prefix + (req.pathname).substring(1);}",
-   "titleRegEx" : " on Vimeo",
-   "titleRegExGlobal": "",
-   "titleReplace": ""
-} 
