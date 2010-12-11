@@ -1,0 +1,21 @@
+{{>header}}
+
+<h2>ComposedMediaPortal Bookmarklet</h2>
+
+<p>
+
+<ol>
+
+<li>If you haven't done so already, drag this link to your bookmarks bar to install the bookmarklet: 
+<!-- Begin JS for bookmarklet -->
+
+<a href="javascript:(function(){jq=document.createElement('SCRIPT');jq.type='text/javascript';jq.src='{{url}}jquery.js';document.getElementsByTagName('head')[0].appendChild(jq);var%20c_iframe='comp_bookmarklet_iframe';var%20calcstring=escape('hostname='+document.location.hostname+'&port='+document.location.port+'&pathname='+document.location.pathname+'&search='+escape(document.location.search)+'&hash='+document.location.hash+'&title='+document.title);var%20iframe_url='{{url}}bookmarklet_form.html?'+calcstring;var%20existing_iframe=document.getElementById(c_iframe);if(existing_iframe){if(calcstring!=''){var%20iframe=existing_iframe;iframe.src=iframe_url;}}else{var%20iframe=document.createElement('IFRAME');iframe.name=c_iframe;iframe.id=c_iframe;iframe.src=iframe_url;iframe.width=800;iframe.height=70;iframe.style.border='0';}document.body.insertBefore(iframe,document.body.firstChild);JQuery(iframe).ready(function(){setTimeout(function(){JQuery(iframe).remove();},10000);});})()">Klapp mich!</a></li>
+
+<li>To bookmark a media site, simply click the bookmarklet while you are on this site.</li>
+</ol>
+</p>
+
+<!-- End JS for bookmarklet -->
+
+{{>footer}}
+</body></html>
