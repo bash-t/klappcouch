@@ -1,0 +1,9 @@
+[submodule "Polster"]
+	path = Polster
+	url = git@github.com:bash-t/Polster.git
+[submodule "Donja"]
+	path = Donja
+	url = git@github.com:bash-t/Donja.git
+[submodule "Plumeau"]
+	path = Plumeau
+	url = git@github.com:bash-t/Plumeau.git
